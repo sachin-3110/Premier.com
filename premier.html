@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemier.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playwrite+US+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    h1 {
+      letter-spacing: -2px;
+    }
+    #container {
+      animation-name: scrolling;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-delay: 1.2s;
+    }
+    @keyframes scrolling {
+      from {
+        transform: translateX(8%);
+      }
+      to {
+        transform: translateX(-90%);
+      }
+    }
+    #scroll::-webkit-scrollbar {
+      display: none;
+    }
+    #elem:hover{
+      background-color: rgb(209, 194, 194);
+      transition: 250ms;
+      cursor: pointer;
+    }
+    #marquee h1{
+      -webkit-text-stroke: 2px black;
+      font-weight: 900;
+      animation-name: scrolling;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    </style>
+  <body class="m-0 p-0 box-border">
+    <main class="h-screen w-screen pt-1 overflow-x-hidden">
+      <div
+        id="nav"
+        class="h-[8vh] w-[100%] mt-[40px] border-t-2 border-b-2 border-black"
+      >
+        <div class="flex justify-around">
+          <h1
+            class="flex h-[7.8vh] w-[25%] sm:text-[5.2vh] text-[2.15vh] justify-center items-center font-['Alfa_Slab_One'] pb-2"
+          >
+            premier
+          </h1>
+          <h2
+            class="flex h-[7.8vh] w-[25%] sm:text-[2.3vh] text-[1.15vh] border-r-2 font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Mobiles
+          </h2>
+          <h2
+            class="flex h-[7.8vh] w-[25%] sm:text-[2.3vh] text-[1.15vh] border-r-2 font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Women/Men
+          </h2>
+          <h2
+            class="flex h-[7.8vh] w-[25%] sm:text-[2.3vh] text-[1.15vh] border-r-2 font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Agency / Blog / Information
+          </h2>
+          <h2
+            class="flex h-[7.8vh] w-[10%] sm:text-[2.3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            <i class="ri-search-2-line"></i>
+          </h2>
+        </div>
+      </div>
+      <div class="h-[86.2vh] w-[100vw] flex justify-center items-center">
+        <div id="content" class="h-[75vh] w-[95vw] relative">
+          <div
+            id="overlay"
+            class="h-[50%] w-[100%] text-white absolute bottom-0 flex justify-center"
+          >
+            <div class="w-[95%]">
+              <div
+                class="flex border-b-4 pb-[5vh] justify-between pt-[2.5vh] text-[2em] tracking-[5px] font-extrabold"
+              >
+                <p class="">
+                  Photography <br />
+                  and films
+                </p>
+                <p class="pr-8">1</p>
+              </div>
+              <div
+                class="flex justify-between pt-[2.5vh] text-2xl tracking-wide font-thin"
+              >
+                <h4>Explore</h4>
+                <i class="ri-arrow-right-line text-4xl pr-5 font-thin"></i>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <video
+            src="./video.mp4"
+            autoplay
+            loop
+            muted
+            class="h-[100%] w-[100%] object-cover rounded-2xl"
+          ></video>
+        </div>
+      </div>
+      <div id="scroll" class="h-[40vh] w-[100vw] flex overflow-x-auto">
+        <div id="container" class="h-[100%] w-[100%] flex gap-5 pl-5">
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1490915785914-0af2806c22b6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1506796684999-9fa2770af9c3?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="container" class="h-[100%] w-[100%] flex gap-5 pl-5">
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1490915785914-0af2806c22b6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-black h-[15vw] w-[15vw] rounded-[50%] relative overflow-hidden"
+          >
+            <img
+              class="absolute h-[100%] w-[100%] object-cover"
+              src="https://images.unsplash.com/photo-1506796684999-9fa2770af9c3?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        id="abcd"
+        class="text-[120%] flex h-[10vh] items-center justify-around border-t-4 border-b-4 border-black px-10"
+      >
+        <h3
+          class="h-6 w-6 p-[0.6vw] text-[140%] flex justify-center items-center"
+        >
+          All
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          A
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          B
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          C
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          D
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          E
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          F
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          G
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          H
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          I
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          J
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          K
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          L
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          M
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          N
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          O
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          P
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          Q
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          R
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          S
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          T
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          U
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          V
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          W
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          X
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          Y
+        </h3>
+        <h3
+          class="hover:bg-black hover:text-white hover:border hover:border-black h-6 w-6 p-[0.9vw] hover:cursor-pointer transition ease-in-out flex justify-center items-center rounded-[50%]"
+        >
+          Z
+        </h3>
+      </div>
+      <div id="page2" class="h-[110vh]">
+        <div
+          id="imagcontainer"
+          class="h-[100%] w-[100%] flex justify-evenly items-center mt-[5vh]"
+        >
+          <div class="h-[100%] w-[50%]">
+            <div
+              id="img1"
+              class="h-[90%] rounded-2xl w-[100%] bg-[url('https://www.patek.com/resources/img/launch_2024_5330/images/LD_5330_Tan_Jacket_Landscape_1000.jpg')] bg-cover bg-center"
+            ></div>
+            <div>
+              <h2 class="pt-5 px-2 font-bold tracking-wide text-4xl uppercase">
+                Stylish/Classic
+              </h2>
+            </div>
+          </div>
+          <div class="h-[100%] w-[40%] self-start">
+            <div
+              id="img1"
+              class="h-[60%] w-[100%] rounded-2xl bg-[url('https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_1600/v1708388756/rolexcom/collection/family-pages/professional-watches/sea-dweller/deepsea-watches/professional-watches-deepsea-watches-rolex-deepsea-challenge-m126067-0001-2209jva-001-fond-digital')] bg-cover"
+            ></div>
+            <div class="h-[20 vh] overflow-hidden">
+              <div class="w-[100%] flex justify-between">
+                <h2 class="pt-5 px-2 font-extrabold w-[20%] h-[50%]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                  voluptatem ipsam dicta dolorem blanditiis.
+                </h2>
+                <h6
+                  class="pt-5 px-2 text-sm font-bold tracking-wide w-[60%] h-[50%]"
+                >
+                  Lorem ipsum dolor: sit amet, consectetur adipisicing elit.
+                  Odio voluptatem ipsam dicta dolorem blanditiis. Sed,
+                  recusandae. Nihil, possimus? Saepe odio rem iure adipisci
+                  repellendus sequi, in natus, doloremque impedit inventore,
+                  commodi exercitationem alias. Neque aliquam deleniti alias
+                  veniam modi perspiciatis rem numquam consectetur possimus
+                  quidem ut, dolore impedit esse accusantium?
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page3" class="h-[100vh] w-[100vw] p-[6vh] flex justify-between">
+        <div id="page-part1" class="h-[100%] w-[48%]">
+          <div
+            id="images"
+            class="h-[80%] w-[100%] bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsZWKnpyC5GhtPWeJUUldTpdY5p6OwDC4XQ&s')] bg-no-repeat bg-center bg-cover object-contain flex justify-center items-center"
+          >
+            <img src="./arrow.png" alt="" class="h-[30%]" />
+          </div>
+          <h2 class="pt-5 p-3">
+            <u><b> Lorem ipsum: </b></u>dolor sit amet. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Officia, id maiores! Expedita
+            porro similique dolor esse magnam recusandae, quisquam, ducimus
+            iusto sapiente totam rem asperiores nisi fugit possimus sint magni?
+          </h2>
+        </div>
+        <div
+          id="page-part2"
+          class="bg-white h-[100%] w-[48%] bg-[url('https://senseorient.com/wp-content/uploads/2022/02/Drive-de-Cartier-1024x693.jpeg')] rounded-2xl bg-cover"
+        ></div>
+      </div>
+      <div id="page4"
+        class="h-[90vh] rounded-2xl flex flex-col items-center justify-center w-[100vw]"
+      >
+        <div class="h-[85%] w-[90%] flex overflow-hidden">
+          <video
+            src="video2.mp4"
+            muted
+            loop
+            autoplay
+            class="h-[100vh] w-[150vw]"
+          ></video>
+        </div>
+      </div>
+      <div id="page5" class="h-[100vh] w-[100vw] text-center ">
+        <div><h1 class="text-5xl pt-[2vh] font-extrabold tracking-wider uppercase">Updates</h1></div>
+        <div class="flex flex-col justify-center items-center mt-[10vh]">
+        <div id="elem" class="h-[27vh] group border-t-4 flex justify-between items-center px-10 border-black w-[90%]">
+          <h2 class="text-3xl font-bold ">Women's World</h2>
+          <div class="h-[20vh] w-[20vh] rounded-[50%] overflow-hidden -translate-x-[10vw] transition duration-500 p-[2vh] group-hover: opacity-0 group-hover:opacity-100 group-hover:translate-x-[10vw]">
+          <img src="https://www.fashiongonerogue.com/wp-content/uploads/2014/07/Casio-G-Shock-Womens-Watches02-774x1200.jpg" alt="" class="h-[100%] w-[100%] object-cover object-top"></div>
+          <div>
+            <h2 class="text-6xl font-extrabold">Ram Lal</h2>
+            <h2 class="text-xl p-2">25th MARCH 2024</h2>
+          </div>           
+        </div>
+        <div id="elem" class="h-[27vh] group border-t-4 flex justify-between items-center px-10 border-black w-[90%]">
+          <h2 class="text-3xl font-bold ">Kid's World</h2>
+          <div class="h-[20vh] w-[20vh] rounded-[50%] overflow-hidden -translate-x-[10vw] p-[2vh] transition duration-500 group-hover: opacity-0 group-hover:opacity-100 group-hover:translate-x-[10vw]">
+          <img src="https://images-cdn.ubuy.co.in/665bc8b4cd5b2456181bbabd-accutime-kids-marvel-spider-man-miles.jpg" alt="" class="h-[100%] w-[100%] object-cover object-top"></div>
+          <div>
+            <h2 class="text-6xl font-extrabold">Shyam Peele</h2>
+            <h2 class="text-xl p-2">25th MARCH 2024</h2>
+          </div>           
+        </div>
+        <div id="elem" class="h-[27vh] group border-t-4 flex justify-between items-center px-10 border-black w-[90%] border-b-4">
+          <h2 class="text-3xl font-bold ">Man's World</h2>
+          <div class="h-[20vh] w-[20vh] rounded-[50%] overflow-hidden -translate-x-[10vw] p-[2vh] transition duration-500 group-hover: opacity-0 group-hover:opacity-100 group-hover:translate-x-[10vw]">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdSghtVhM9XDwvg7EDOW3p_leF5DO1PrKI7A&s" alt="" class="h-[100%] w-[100%] object-cover object-top"></div>
+          <div>
+            <h2 class="text-6xl font-extrabold">Anil Neele</h2>
+            <h2 class="text-xl p-2">25th MARCH 2024</h2>
+          </div>           
+        </div>
+          
+        </div>
+        </div>
+      <div id="marquee" class="w-[100vw] mt-[30vh] mb-[30vh] whitespace-nowrap overflow-x-hidden text-[10vh] text-transparent uppercase border-t-4 border-b-4 border-black" >
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+        <h1 class="inline-block pl-5">Made by Sachin Sharma</h1>
+      </div>
+      <div id="footer" class="h-[50vh] w-[100vw]">
+        <div
+        id="nav"
+        class="h-[9vh] w-[100%] mt-[40px] border-t-2 border-b-2 border-black"
+      >
+        <div class="flex justify-around">
+          <h1
+            class="flex h-[10vh] w-[25%] sm:text-[7vh] text-[2.15vh] justify-center items-center font-['Alfa_Slab_One']"
+          >
+            premier
+          </h1>
+          <h2
+            class="flex   w-[25%] sm:text-[3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Mobiles
+          </h2>
+          <h2
+            class="flex   w-[25%] sm:text-[3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Women/Men
+          </h2>
+          <h2
+            class="flex   w-[35%] sm:text-[3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+            Agency / Blog / Information
+          </h2>
+          <h2
+            class="flex   w-[25%] sm:text-[3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+          Help          </h2>
+          <h2
+            class="flex   w-[25%] sm:text-[3vh] text-[1.15vh] font-normal border-black justify-center items-center hover:cursor-pointer hover:font-extrabold"
+          >
+       contact us
+          </h2>
+        
+        </div>
+      </div>
+      </div>
+      </main>
+
+  </body>
+</html>
